@@ -19,7 +19,7 @@ const Login = () => {
         }
         if (error) {
             // console.log("error here ", error)/
-            toast.error(error.data.message)
+            toast.error(error?.data?.message)
         }
     }, [error, isAuthenticated])
 

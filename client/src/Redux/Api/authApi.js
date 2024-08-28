@@ -32,7 +32,7 @@ export const authApi = createApi({
                     await queryFulfilled;
                     await dispatch(userApi.endpoints.getMe.initiate(null));
                 } catch (error) {
-                    console.log(error.error.data.message);
+                    console.log(error?.error?.data?.message);
                 }
             }
         }),

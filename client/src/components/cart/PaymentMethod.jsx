@@ -24,13 +24,13 @@ const PaymentMethod = () => {
             window.location.href = Checkoutdata.url
         }
         if (checkoutError) {
-            toast.error(checkoutError.data.message)
+            toast.error(checkouterror?.data?.message)
         }
     }, [Checkoutdata, checkoutError])
 
     useEffect(() => {
         if (error) {
-            toast.error(error.data.message);
+            toast.error(error?.data?.message);
         }
         if (isSuccess) {
             nav("/me/orders?order_success=true")

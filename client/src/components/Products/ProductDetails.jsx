@@ -28,7 +28,7 @@ const ProductDetails = () => {
 
     useEffect(() => {
         if (isError) {
-            toast.success(error.data.message)
+            toast.success(error?.data?.message)
         }
     }, [isError])
 

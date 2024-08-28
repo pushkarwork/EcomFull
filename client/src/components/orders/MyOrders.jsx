@@ -21,7 +21,7 @@ const MyOrders = () => {
 
         }
         if (error) {
-            toast.error(error.data.message);
+            toast.error(error?.data?.message);
         }
     }, [error, OrderSuccess, dispatch, nav])
     const setOrders = () => {

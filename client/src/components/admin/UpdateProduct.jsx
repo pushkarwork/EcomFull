@@ -30,7 +30,7 @@ const UpdateProduct = () => {
     useEffect(() => {
 
         if (error) {
-            toast.error(error.data.message);
+            toast.error(error?.data?.message);
         }
         if (isSuccess) {
             toast.success("Product Updated Successfully");

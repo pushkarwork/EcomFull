@@ -17,10 +17,10 @@ const ListProducts = () => {
             toast.success("Product Deleted");
         }
         if (error) {
-            toast.error(error.data.message);
+            toast.error(error?.data?.message);
         }
         if (DeleteError) {
-            toast.error(DeleteError.data.message);
+            toast.error(DeleteError?.data?.message);
         }
     }, [error, DeleteError, isSuccess])
 

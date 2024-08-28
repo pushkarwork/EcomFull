@@ -12,7 +12,7 @@ const NewReviews = ({ productId }) => {
     const canReview = data?.canReview;
     useEffect(() => {
         if (error) {
-            toast.error(error.data.message)
+            toast.error(error?.data?.message)
         }
         if (isSuccess) {
             toast.success("Review Submitted")

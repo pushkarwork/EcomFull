@@ -16,7 +16,7 @@ const Dashboard = () => {
     useEffect(() => {
 
         if (error) {
-            toast.error(error.data.message)
+            toast.error(error?.data?.message)
         }
         if (startDate && endDate && !data) {
             getDashboardSales({

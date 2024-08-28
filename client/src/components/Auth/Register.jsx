@@ -20,7 +20,7 @@ const Register = () => {
             nav('/')
         }
         if (error) {
-            toast.error(error.data.message)
+            toast.error(error?.data?.message)
         }
     }, [error, isAuthenticated])
 
