@@ -16,6 +16,7 @@ const getAllProducts = CatchAsyncErrors(async (req, res, next) => {
     api_filters.pagination(resPerPage)
     products = await api_filters.query.clone()
     // const products = await productSchema.find()
+    console.log(resPerPage, filtered_Products_Count, products)
     res.status(201).json({ resPerPage, filtered_Products_Count, products });
 })
 
