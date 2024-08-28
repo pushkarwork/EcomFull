@@ -5,7 +5,7 @@ import { setUser, setIsAuthenticated, setLoading } from "../features/userSlice"
 export const userApi = createApi({
     reducerPath: "userApi",
     baseQuery: fetchBaseQuery({
-        baseUrl: "http://localhost:4500/api/v1",
+        baseUrl: "https://ecomfull.onrender.com/api/v1",
         credentials: "include"
     }), tagTypes: ["User", "AdminUsers"],
     endpoints: (builder) => ({
